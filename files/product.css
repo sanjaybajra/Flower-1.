@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.pro{
+    height: 100vh;
+    width: 100%;
+    background-image: url("images/bookey-2.webp");
+    background-size: cover;
+    background-position: center;
+opacity: 0.6;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.details-1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:    center;
+}
+.inp{
+    
+    height: 50px;
+    width: 40%;
+    border: 2px solid white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.inp input{
+    font-size: 4vw;
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px;
+    font-size: 1.5vw;
+    border: none;
+    background: transparent;
+border-radius: 30px;
+  
+}
+.inp input::placeholder{
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+.inp i{
+    color: white;
+    font-size: 2vw;
+    margin-right: 1.3vw;
+}
+.inp input:focus{
+    outline: none;
+}
+.itemslist-1{
+height:100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: 20px;
+
+}
+.itemslist-1 .header {
+    font-size: 4vw;
+    margin-top: 3vw;
+    background-color: lightgray;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.items-1{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;   
+}
+.flowers{
+    height: 460px;
+    width: 370px;
+    margin: 0 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    transition: 2s;
+}
+.imagesflower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 80%;
+}
+.items-1 img{
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+     
+}
+.flowername{
+  display: none;
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.cart-icon{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-icon a{
+    font-size: 2vw;
+text-decoration: none;
+    cursor: pointer;
+}
+/* .flowers:hover {
+     .flowername{
+        display: block;
+       
+     }
+     cursor: pointer;
+} */
+ @media (max-width:600px){
+    .pro{
+        height: 100vh;
+        width: 100%;
+    }
+    .details-1{
+        height: 100%;
+        width: 100%;
+    }
+    .details-1 .inp{
+        height: 30px;
+        width: 80%;
+    }
+   .inp input text{
+        font-size: 9vw;
+    }
+    .inp input::placeholder{
+    color: white;
+    font-size: 2vh;
+    font-weight: 500;
+}
+    .inp i{
+        font-size: 4vw;
+        margin-right: 3vw;
+    }
+    .itemslist-1{
+     
+
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+    }
+    .itemslist-1 .header {
+        font-size: 6vw;
+        margin-top: 6vw;
+    }
+    .items-1{
+        height: 100%;
+        width: 100%;
+    display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .flowers{
+        height: 60%;
+        width: 90%;
+        margin: 0 4vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+       
+    }
+    .flowers i{
+        font-size: 7vw;
+    }
+    .flowername{
+        font-size: 3vw;
+    }
+    #itemslist-3{
+        margin-top: 110vh;
+    }
+ }
